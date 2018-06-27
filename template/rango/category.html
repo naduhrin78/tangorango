@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base_boot_strap.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    {{ category.name }}
+{% endblock %}
+
+{% block body_block %}
+
+    {% if category %}
+        <h1>{{ category.name }}</h1>
+        <p id="likes_count">{{ category.likes }} People liked this category.</p>
+        {% if pages %}
+        <ul>
+            {% for page in pages %}
+                <li>
+                    <a href="{% url 'goto' %}?slug={{page.slug}}">{{ page.title }}</a>
+                    ({{ page.views }} view(s))
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <strong>No pages in this category right now</strong>
+        {% endif %}
+
+    {% else %}
+        <strong>Specified category doesn't exist</strong>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        <form action="{% url 'add_page' category.slug %}">
+        <button  class="btn btn-success">
+           Add Page
+        </button>
+        </form>
+        <br>
+        <button id="likes" data-catid="{{ category.id }}" class="btn btn-primary">
+              Like
+        </button>
+        <button id="dislikes" data-catid="{{ category.id }}" class="btn btn-danger">
+            Unike
+        </button>
+    {% endif %}
+{% endblock %}

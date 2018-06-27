@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<ul>
+    {% if cats %}
+        {% for cat in cats %}
+        <ul class="nav nav-pills flex-column">
+            {% if cat.name == active_cat.name %}
+                <strong>
+                    <li class="nav-link"><a class="nav-item" href="{% url 'category' cat.slug %}">{{ cat.name }}</a> </li>
+                </strong>
+            {% else %}
+                <li><a href="{% url 'category' cat.slug %}">{{ cat.name }}</a> </li>
+            {% endif %}
+        </ul>
+        {% endfor %}
+    {% else %}
+        <strong>There are no categories present.</strong>
+    {% endif %}
+</ul>

@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base_boot_strap.html' %}
+
+{% block title_block %}
+    Login
+{% endblock %}
+
+{% block body_block %}
+    <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+
+    <h1 align="center" class="display-2">Login</h1>
+
+    <form class="form-signin" role="form" method="post" action=".">
+        {% csrf_token %}
+
+        <h2 class="form-signin-heading">Please sign in</h2>
+
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="id_username" class="form-control" name="username" placeholder="Username" required autofocus>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="id_password" name="password" class="form-control"
+        placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit"
+        value="Submit" />Sign in</button>
+
+    </form>
+    <p align="center">
+        Not a member?
+        <a href="{% url 'registration_register' %}">Register</a>
+    </p>
+
+{% endblock %}

@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base_boot_strap.html' %}
+{% load static %}
+
+{% block title_block %}
+    {{ 'About' }}
+{% endblock %}
+
+{% block body_block %}
+    <p>about</p>
+    <b>{{ change_this }}</b>
+    <img src = "{% static 'tango.png' %}" />
+{% endblock %}

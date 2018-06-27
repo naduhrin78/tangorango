@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base_boot_strap.html' %}
+
+{% block title_block %}
+    {{ 'Register Profile' }}
+{% endblock %}
+
+{% block body_block %}
+
+    <form id="user_form" method="post" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ profile_form.as_p }}
+
+        <input type="submit" name="submit" value="Register" />
+
+    </form>
+
+{% endblock %}

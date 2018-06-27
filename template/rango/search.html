@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base_boot_strap.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Search
+{% endblock %}
+
+{% block body_block %}
+    {% if result_list %}
+        <h3>Results</h3>
+        <div class="list-group">
+        {% for result in result_list %}
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">
+                    <a href="{{ result.link }}">{{ result.title }}</a>
+                </h4>
+                <p class="list-group-item-text">{{ result.summary }}</p>
+            </div>
+        {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}
