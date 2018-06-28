@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_PATH = os.path.join(BASE_DIR, 'template')
@@ -29,7 +29,7 @@ SECRET_KEY = '9-)b=4a7mj83z(h!w4stxi@ty^@i)$v4zca)u1dmqcqd+hl1+v'
 #DEBUG = True
 DEBUG= False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
