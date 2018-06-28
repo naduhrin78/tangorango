@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af146b37-312d-407d-ade8-fbc3540290d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TangoRango/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TangoRango/runtime" beforeDir="false" afterPath="$PROJECT_DIR$/TangoRango/runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TangoRango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TangoRango/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,25 +34,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rango/views.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="84" column="90" selection-start-line="84" selection-start-column="90" selection-end-line="84" selection-end-column="90" />
+            <state relative-caret-position="76">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/rango/profile.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TangoRango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="445">
+              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+              <folding>
+                <element signature="e#634#666#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rango/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -69,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
       <find>.session.get</find>
       <find>registration</find>
       <find>top</find>
@@ -99,6 +105,7 @@
       <find>add_page</find>
       <find>root</find>
       <find>static_path</find>
+      <find>conf</find>
     </findStrings>
     <replaceStrings>
       <replace>http://v4-alpha.getbootstrap.com/</replace>
@@ -123,7 +130,6 @@
         <option value="$PROJECT_DIR$/template/rango/login.html" />
         <option value="$PROJECT_DIR$/template/registration/logout.html" />
         <option value="$PROJECT_DIR$/template/registration/registration_complete.html" />
-        <option value="$PROJECT_DIR$/TangoRango/urls.py" />
         <option value="$PROJECT_DIR$/template/rango/test.html" />
         <option value="$PROJECT_DIR$/populate.py" />
         <option value="$PROJECT_DIR$/rango/models.py" />
@@ -134,7 +140,6 @@
         <option value="$PROJECT_DIR$/rango/admin.py" />
         <option value="$PROJECT_DIR$/template/rango/index.html" />
         <option value="$PROJECT_DIR$/static/js/rango-ajax.js" />
-        <option value="$PROJECT_DIR$/rango/urls.py" />
         <option value="$PROJECT_DIR$/template/rango/category_list.html" />
         <option value="$PROJECT_DIR$/template/rango/cats.html" />
         <option value="$PROJECT_DIR$/template/rango/base_boot_strap.html" />
@@ -151,6 +156,8 @@
         <option value="$PROJECT_DIR$/TangoRango/settings.py" />
         <option value="$PROJECT_DIR$/TangoRango/python-3.6.4" />
         <option value="$PROJECT_DIR$/TangoRango/runtime" />
+        <option value="$PROJECT_DIR$/rango/urls.py" />
+        <option value="$PROJECT_DIR$/TangoRango/urls.py" />
       </list>
     </option>
   </component>
@@ -215,12 +222,6 @@
             <path>
               <item name="TangoRango" type="b2602c69:ProjectViewProjectNode" />
               <item name="TangoRango" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TangoRango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TangoRango" type="462c0819:PsiDirectoryNode" />
               <item name="TangoRango" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,16 +254,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/media" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/rango/templatetags" />
       <recent name="$PROJECT_DIR$/rango" />
       <recent name="$PROJECT_DIR$/media" />
       <recent name="$PROJECT_DIR$/Static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,6 +344,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="798" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3281027" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -493,12 +495,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/template/rango/test.html" />
-    <entry file="file://$PROJECT_DIR$/TangoRango/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rango/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/populate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -633,20 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TangoRango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/rango/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -682,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rango/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="84" column="90" selection-start-line="84" selection-start-column="90" selection-end-line="84" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-960">
@@ -706,19 +678,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/rango/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TangoRango/settings.py">
+    <entry file="file://$PROJECT_DIR$/rango/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="217">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding>
-            <element signature="e#311#320#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -727,6 +695,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TangoRango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="12" />
+          <folding>
+            <element signature="e#311#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TangoRango/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TangoRango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,14 +9,11 @@ urlpatterns = [
                url(r'^category/(?P<category_name_slug>[\w\-]+)/$', views.show_cat, name='category'),
                url(r'^rango/goto/$', views.track_url, name='goto'),
                url(r'^search/$', views.mod_cat, name='search'),
-               #url(r'^search/$', views.search, name='search')
                url(r'^profiles/', views.list_profiles, name='profiles'),
                url(r'^register_profile/$', views.register_profile, name='register_profile'),
                url(r'^profile/(?P<username>[\w\-]+)/$', views.profile, name='profile'),
                url(r'^like_category/', views.like_category, name='like_category'),
                url(r'^dislike_category/', views.dislike_category, name='dislike_category'),
                url(r'^suggest_category/$', views.suggest_category, name='suggest_category'),
-               #url(r'^login/$', views.login, name='login'),
-               #url(r'^logout/$', views.logout, name='logout'),
 
                ]

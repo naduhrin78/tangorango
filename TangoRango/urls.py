@@ -20,13 +20,13 @@ from django.urls import path
 from django.conf import settings
 from rango import views
 
-if settings.DEBUG:
-    urlpatterns = [
-        path('admin/', admin.site.urls),
-        url(r'^rango/', include('rango.urls')),
-        url(r'^accounts/', include('registration.backends.simple.urls')),
-        url(r'^accounts/register/$', views.MyRegistrationView.as_view(), name='registration_register'),
 
-        ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    url(r'^rango/', include('rango.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^accounts/register/$', views.MyRegistrationView.as_view(), name='registration_register'),
 
-    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_PATH)
+    ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_PATH)
