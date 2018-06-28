@@ -104,8 +104,8 @@ WSGI_APPLICATION = 'TangoRango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangogirls',
-        'USER': 'name',
+        'NAME': 'anirudhn',
+        'USER': 'anirudhn',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',

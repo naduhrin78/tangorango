@@ -1,11 +1,12 @@
 {% extends 'rango/base_boot_strap.html' %}
+{% load staticfiles %}
 
 {% block title_block %}
     Login
 {% endblock %}
 
 {% block body_block %}
-    <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
 
     <h1 align="center" class="display-2">Login</h1>
 
