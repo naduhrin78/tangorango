@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af146b37-312d-407d-ade8-fbc3540290d0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/ie10bugworkround.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/rango/base_boot_strap.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/rango/base_boot_strap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/rango/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/rango/search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +33,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base_boot_strap.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base_boot_strap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/rango/base_boot_strap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="111" column="50" selection-start-line="111" selection-start-column="50" selection-end-line="111" selection-end-column="50" />
+            <state relative-caret-position="-1355">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/rango/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -117,7 +121,6 @@
         <option value="$PROJECT_DIR$/template/rango/test.html" />
         <option value="$PROJECT_DIR$/populate.py" />
         <option value="$PROJECT_DIR$/rango/models.py" />
-        <option value="$PROJECT_DIR$/template/rango/search.html" />
         <option value="$PROJECT_DIR$/rango/search.key" />
         <option value="$PROJECT_DIR$/rango/search.py" />
         <option value="$PROJECT_DIR$/template/rango/register.html" />
@@ -149,6 +152,7 @@
         <option value="$PROJECT_DIR$/static/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/static/js/ie10bugworkround.js" />
         <option value="$PROJECT_DIR$/template/rango/base_boot_strap.html" />
+        <option value="$PROJECT_DIR$/template/rango/search.html" />
       </list>
     </option>
   </component>
@@ -560,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/rango/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/rango/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -754,8 +751,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/rango/base_boot_strap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="111" column="50" selection-start-line="111" selection-start-column="50" selection-end-line="111" selection-end-column="50" />
+        <state relative-caret-position="-1355">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/rango/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
