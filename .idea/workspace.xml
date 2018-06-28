@@ -49,8 +49,8 @@
       <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/registration/registration_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="152">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -139,7 +139,6 @@
         <option value="$PROJECT_DIR$/rango/urls.py" />
         <option value="$PROJECT_DIR$/TangoRango/settings.py" />
         <option value="$PROJECT_DIR$/TangoRango/urls.py" />
-        <option value="$PROJECT_DIR$/static/css/signin.css" />
         <option value="$PROJECT_DIR$/template/rango/about.html" />
         <option value="$PROJECT_DIR$/template/rango/profile.html" />
         <option value="$PROJECT_DIR$/template/rango/add_category.html" />
@@ -158,6 +157,7 @@
         <option value="$PROJECT_DIR$/template/rango/base_boot_strap.html" />
         <option value="$PROJECT_DIR$/certificate" />
         <option value="$PROJECT_DIR$/media_firebase.py" />
+        <option value="$PROJECT_DIR$/static/css/signin.css" />
         <option value="$PROJECT_DIR$/template/registration/registration_form.html" />
       </list>
     </option>
@@ -225,12 +225,6 @@
               <item name="TangoRango" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TangoRango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TangoRango" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TangoRango" type="b2602c69:ProjectViewProjectNode" />
@@ -549,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/rango/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -782,10 +769,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/registration/registration_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="152">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
