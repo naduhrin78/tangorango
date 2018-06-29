@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 # from django.template import RequestContext
 # from django.shortcuts import render_to_response
 # from django.contrib.auth import login as auth_login, authenticate, logout as auth_logout
@@ -74,21 +74,27 @@ def list_profiles(request):
     context_dict = {'userprofile_list': userprofile_list}
     return render(request,'rango/list_profiles.html', context_dict)
 
+
+@login_required
 def profile(request, username):
     try:
         user = User.objects.get(username=username)
     except User.DoesNotExist:
-        HttpResponseRedirect(reverse('index'))
+        redirect(reverse('index'))
 
     userprofile = UserProfile.objects.get(user=user)
 
     form = UserProfileForm({'website': userprofile.website, 'picture': userprofile.picture})
 
     if request.method == 'POST':
-        form = UserProfile(request.POST, request.FILES, instance = userprofile)
+        data_dict = {'csrfmiddlewaretoken': request.POST['csrfmiddlewaretoken'], 'picture': request.POST['picture'], 'website': request.POST['website']}
+        pwd = request.POST['pwd']
+        user.set_password(pwd)
+        user.save()
+        form = UserProfileForm(data_dict, request.FILES, instance=userprofile)
         if form.is_valid():
             form.save(commit=True)
-            return HttpResponseRedirect('profile', user.username)
+            return redirect('profile', user.username)
         else:
             print(form.errors)
 
@@ -116,7 +122,7 @@ def track_url(request):
                 page = Page.objects.get(slug=request.GET['slug'])
                 page.views = page.views + 1
                 page.save()
-                return HttpResponseRedirect(page.url)
+                return redirect(page.url)
 
             except Page.DoesNotExist:
                 return render(request, 'rango/index.html', context_dict)
@@ -155,7 +161,7 @@ def visitor_cookie_handler(request):
 """
 def logout(request):
     auth_logout(request)
-    return HttpResponseRedirect(reverse('index'))
+    return redirect(reverse('index'))
 """
 
 # Used for custom logout view
@@ -171,7 +177,7 @@ def login(request):
         if user:
             if user.is_active:
                 auth_login(request, user)
-                return HttpResponseRedirect(reverse('index'))
+                return redirect(reverse('index'))
 
             else:
                 return HttpResponse('Your rango account is disabled.')
@@ -204,7 +210,7 @@ def register_profile(request):
 
             userpro.save()
 
-            return HttpResponseRedirect(reverse('index'))
+            return redirect(reverse('index'))
 
         else:
             print(userproform.errors)
