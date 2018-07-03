@@ -14,6 +14,9 @@ def read_key():
 
     return key
 
+def replace(word):
+    return word.replace(' ', '-')
+
 def run_query(search_item, size=10):
     key = read_key()
 
@@ -39,6 +42,7 @@ def run_query(search_item, size=10):
                 'title': post['title'],
                 'link': post['url'],
                 'summary': post['text'][:200],
+                'slug': replace(post['title'])
             })
 
     except Exception as e:

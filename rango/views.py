@@ -12,6 +12,7 @@ from datetime import datetime
 from django.contrib.auth.models import User
 from registration.backends.simple.views import RegistrationView
 from rango.search import run_query
+from django.core.validators import URLValidator
 
 def get_category_list(max = 0, starts_with =''):
     cat_list = []
@@ -34,6 +35,20 @@ def suggest_category(request):
 
     return render(request, 'rango/category_list.html',  context_dict)
 
+def search_cat(request):
+    if request.method == 'GET':
+        category = request.GET['category']
+
+    category = slugify(category)
+
+    try:
+        cat = Category.objects.get(slug=category)
+
+    except Category.DoesNotExist:
+        category = "new"
+        print('Proceed to add a category or cancel the request.')
+
+    return HttpResponse(category)
 
 @login_required
 def like_category(request):
@@ -226,6 +241,7 @@ def add_cat(request):
     form = CatForm()
 
     if request.method == 'POST':
+
         form = CatForm(request.POST)
 
         if form.is_valid():
@@ -240,28 +256,41 @@ def add_cat(request):
 
     return render(request, 'rango/add_category.html', context_dict)
 
+def revreplace(word):
+    return word.replace("-", " ")[1:-1]
 
 @login_required
 def add_page(request, category_name_slug):
+
+    category_name_slug = slugify(category_name_slug)
+
     try:
-        category = Category.objects.get(slug = category_name_slug)
+        category = Category.objects.get(slug=category_name_slug)
 
     except Category.DoesNotExist:
         category = None
 
     form = PageForm()
 
-    if request.method == 'POST':
-        form = PageForm(request.POST)
+    url = request.POST['url']
 
-        if form.is_valid():
-            page = form.save(commit=False)
-            page.views = 0
-            page.category = category
-            page.save()
-            return show_cat(request, category_name_slug)
-        else:
-            print(form.errors)
+    if str(url[1:19]) == 'http://omgili.com/':
+
+        page = Page.objects.get_or_create(category=category, title=revreplace(request.POST['title']), url=url[1:-1], views=0)
+
+    else:
+        if request.method == 'POST':
+            form = PageForm(request.POST)
+
+            if form.is_valid():
+                page = form.save(commit=False)
+                page.views = 0
+                page.url = url
+                page.category = category
+                page.save()
+                return show_cat(request, category_name_slug)
+            else:
+                print(form.errors)
 
     context_dict = {'category':category, 'form':form}
 
@@ -277,19 +306,15 @@ def show_cat(request, category_name_slug):
         pages = Page.objects.filter(category=category)
 
     except Category.DoesNotExist:
-        return search(request)
+        print('RIP show_cat')
 
     context_dict = {'category':category, 'pages':pages}
 
     return render(request, 'rango/category.html', context_dict)
 
 def mod_cat(request):
-    category_name_slug = None
 
-    if request.method == 'POST':
-        category_name_slug = slugify(request.POST['query'])
-
-    return show_cat(request, category_name_slug)
+    return search(request)
 
 
 
