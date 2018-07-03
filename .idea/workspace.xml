@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af146b37-312d-407d-ade8-fbc3540290d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TangoRango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TangoRango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rango/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/rango-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/rango-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/rango/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/rango/search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +55,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TangoRango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="99" column="53" lean-forward="true" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
+            <state relative-caret-position="90">
+              <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
               <folding>
                 <element signature="e#311#320#0" expanded="true" />
               </folding>
@@ -74,7 +67,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rango/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
+            <state relative-caret-position="-628">
               <caret line="259" column="38" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="38" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -422,7 +415,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="798" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3281027" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.3281027" />
@@ -785,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rango/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="-628">
           <caret line="259" column="38" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="38" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -795,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TangoRango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="99" column="53" lean-forward="true" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
+        <state relative-caret-position="90">
+          <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
           <folding>
             <element signature="e#311#320#0" expanded="true" />
           </folding>
