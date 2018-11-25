@@ -1,6 +1,6 @@
 # TangoRango
 
 ### First django app
-#### -Allow user to save links, rate them.
-#### -Allow signup, signin, logout.
-#### -Maintain user profile.
+###3 -Allow user to save links, rate them.
+###3 -Allow signup, signin, logout.
+###3 -Maintain user profile.
