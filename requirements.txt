@@ -28,7 +28,7 @@ ipython-genutils==0.2.0
 ipywidgets==7.0.5
 Jinja2==2.10
 jsonschema==2.6.0
-lxml==4.2.1
+lxml==4.6.3
 Markdown==2.6.9
 MarkupSafe==1.0
 mistune==0.8.3
